@@ -9,6 +9,11 @@
 // Core modules do NOT need to be installed
 // They only need to be imported using `require()`
 
+// Core modules: core packages (fs, path),
+// core functions (e.g., setInterval()),
+// and core objects (e.g., Math.random())
+
+
 
 
 // -------------------- setTimeout --------------------
