@@ -76,10 +76,37 @@ const checkIP = validator.isIP("114.111.33.222");
 const chalk = require("chalk");
 
 // Print blue colored text in the terminal
-console.log(chalk.blue("Hello World!"));
+// console.log(chalk.blue("Hello World!"));
 
 // Examples of other styles:
 // console.log(chalk.green("Success message"));
 // console.log(chalk.red("Error message"));
 // console.log(chalk.yellow.bold("Warning message"));
 // console.log(chalk.bgBlue.white("Highlighted text"));
+
+
+
+
+// ===============================
+// Node schedule package
+// ===============================
+
+const schedule = require("node-schedule");
+
+schedule.scheduleJob("5 * * * * *", function(){
+  // console.log("Scheduled func")
+})
+
+/*
+
+*    *    *    *    *    *
+┬    ┬    ┬    ┬    ┬    ┬
+│    │    │    │    │    │
+│    │    │    │    │    └ day of week (0 - 7) (0 or 7 is Sun)
+│    │    │    │    └───── month (1 - 12)
+│    │    │    └────────── day of month (1 - 31)
+│    │    └─────────────── hour (0 - 23)
+│    └──────────────────── minute (0 - 59)
+└───────────────────────── second (0 - 59, OPTIONAL)
+
+*/
