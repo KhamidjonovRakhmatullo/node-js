@@ -45,7 +45,7 @@ class Account {
   }
 
   static time(){
-    const time = moment().format("YYYY MM DD hh:mm:ss");
+    const time = moment().format("YYYY-MM-DD hh:mm:ss");
     console.log("Date:", time);
   }
 }
